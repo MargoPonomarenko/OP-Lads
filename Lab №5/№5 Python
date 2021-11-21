@@ -1,0 +1,17 @@
+spacing = range(101010, 1000000)
+for a in spacing:
+    factor = 100000
+    n1 = (a // factor) % 10
+    n2 = (a // (factor // 10)) % 10
+    n3 = (a // (factor // 100)) % 10
+    n4 = (a // (factor // 1000)) % 10
+    n5 = (a // (factor // 10000)) % 10
+    n6 = (a // (factor // 100000)) % 10
+    if n1 == n3 and n3 == n5 and n2 == n4 and n4 == n6:
+        print(a)
+    elif n1 == n3 and n3 == n4 and n4 == n6 and n2 == n5:
+        print(a)
+    elif n1 == n4 and n2 == n5 and n3 == n6:
+        print(a)
+    elif n1 == n2 and n2 == n3 and n3 == n4 and n4 == n5 and n5 == n6:
+        print(a)
