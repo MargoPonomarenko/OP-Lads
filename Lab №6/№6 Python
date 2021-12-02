@@ -1,0 +1,13 @@
+import math
+
+def solution():
+    U = min(a, b)
+    V = min(a * b, a + b)
+    W = min(U + V**2, math.pi)
+    print("U value =", U)
+    print("V value =", V)
+    print("W value =", W)
+  
+a = int(input("insert a and b value \n"))
+b = int(input("\n"))
+solution()
