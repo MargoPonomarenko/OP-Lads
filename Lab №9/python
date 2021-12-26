@@ -1,0 +1,12 @@
+number = int(input("Please, enter an integer:"))
+print("Orginal Number =", number)
+number_len = len(str(number))
+character = 0
+digits_sum=0
+for x in range(number_len):
+    digit = number % 10;
+    number /= 10
+    digits_sum += digit
+    character += 1
+print("You inputed", character, "characters")
+print("Sum of the digits is:", round(digits_sum))
